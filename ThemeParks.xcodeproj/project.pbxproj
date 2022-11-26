@@ -14,6 +14,10 @@
 		8C25A2FE29309A3C0019DD11 /* ThemeParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A2FD29309A3C0019DD11 /* ThemeParksTests.swift */; };
 		8C25A30829309A3C0019DD11 /* ThemeParksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A30729309A3C0019DD11 /* ThemeParksUITests.swift */; };
 		8C25A30A29309A3C0019DD11 /* ThemeParksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A30929309A3C0019DD11 /* ThemeParksUITestsLaunchTests.swift */; };
+		8C25A319293130940019DD11 /* TPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A318293130940019DD11 /* TPViewModel.swift */; };
+		8C25A31D2931E4310019DD11 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A31C2931E4310019DD11 /* Park.swift */; };
+		8C25A31F2931E6D40019DD11 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A31E2931E6D40019DD11 /* DataStore.swift */; };
+		8C25A3212931F1E80019DD11 /* ParkAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C25A3202931F1E80019DD11 /* ParkAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		8C25A30329309A3C0019DD11 /* ThemeParksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeParksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C25A30729309A3C0019DD11 /* ThemeParksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeParksUITests.swift; sourceTree = "<group>"; };
 		8C25A30929309A3C0019DD11 /* ThemeParksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeParksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C25A318293130940019DD11 /* TPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPViewModel.swift; sourceTree = "<group>"; };
+		8C25A31C2931E4310019DD11 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		8C25A31E2931E6D40019DD11 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		8C25A3202931F1E80019DD11 /* ParkAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,11 @@
 		8C25A2EB29309A390019DD11 /* ThemeParks */ = {
 			isa = PBXGroup;
 			children = (
+				8C25A31B2931E3F50019DD11 /* Model */,
+				8C25A31A2931E3E70019DD11 /* Data */,
+				8C25A31629312F450019DD11 /* View */,
+				8C25A31729312F6D0019DD11 /* ViewModel */,
 				8C25A2EC29309A390019DD11 /* ThemeParksApp.swift */,
-				8C25A2EE29309A3A0019DD11 /* ContentView.swift */,
 				8C25A2F029309A3B0019DD11 /* Assets.xcassets */,
 				8C25A2F229309A3B0019DD11 /* Preview Content */,
 			);
@@ -125,6 +136,39 @@
 				8C25A30929309A3C0019DD11 /* ThemeParksUITestsLaunchTests.swift */,
 			);
 			path = ThemeParksUITests;
+			sourceTree = "<group>";
+		};
+		8C25A31629312F450019DD11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C25A2EE29309A3A0019DD11 /* ContentView.swift */,
+				8C25A3202931F1E80019DD11 /* ParkAnnotationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C25A31729312F6D0019DD11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8C25A318293130940019DD11 /* TPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8C25A31A2931E3E70019DD11 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C25A31E2931E6D40019DD11 /* DataStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8C25A31B2931E3F50019DD11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C25A31C2931E4310019DD11 /* Park.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C25A319293130940019DD11 /* TPViewModel.swift in Sources */,
 				8C25A2EF29309A3A0019DD11 /* ContentView.swift in Sources */,
 				8C25A2ED29309A390019DD11 /* ThemeParksApp.swift in Sources */,
+				8C25A3212931F1E80019DD11 /* ParkAnnotationView.swift in Sources */,
+				8C25A31F2931E6D40019DD11 /* DataStore.swift in Sources */,
+				8C25A31D2931E4310019DD11 /* Park.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
